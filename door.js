@@ -27,7 +27,11 @@ const transitionToSuccess = () => {
       return card;
     }
   });
-  localStorage.setItem("db", JSON.stringify({ cards: newCards }));
+  const newDatabase = {
+    ...database,
+    cards: newCards,
+  };
+  localStorage.setItem("db", JSON.stringify(newDatabase));
   window.location.href = `./success.html?door=${door}`;
 };
 
