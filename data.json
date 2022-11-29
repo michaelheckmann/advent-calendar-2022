@@ -1,0 +1,180 @@
+{
+  "riddles": [
+    {
+      "number": 1,
+      "question": "🍅🐻🤶📘🌲",
+      "solution": [
+        ["advent", "kalender"],
+        ["michael", "2018"]
+      ],
+      "gif": "https://giphy.com/embed/10k8HMhtzzk73W"
+    },
+    {
+      "number": 2,
+      "question": "🥾🛍️👩‍👧‍👦🍝🧴",
+      "solution": [["freiburg", "michaela", "tante"]],
+      "gif": "https://giphy.com/embed/x33p3SDzDM1ji"
+    },
+    {
+      "number": 3,
+      "question": "🌏⛩️🥂🤵‍♂️👠",
+      "solution": [
+        ["KC", "kaufmann", "casino"],
+        ["weihnacht", "feier"],
+        ["2016"]
+      ],
+      "gif": "https://giphy.com/embed/11EEXw1EIEoHaE"
+    },
+    {
+      "number": 4,
+      "question": "🏯🧊🛝🦯🛷",
+      "solution": [
+        ["see", "eis", "rutsch"],
+        ["sommer", "palast"]
+      ],
+      "gif": "https://giphy.com/embed/duaQp3isrljiRBsc0h"
+    },
+    {
+      "number": 5,
+      "question": "👩‍🍳🛒🎟️✨📺",
+      "solution": [
+        ["messe", "veranstaltung", "ausflug"],
+        ["kuchen", "handarbeit", "deko", "backen"]
+      ],
+      "gif": "https://giphy.com/embed/y9CfVEVmV7XQvB281q"
+    },
+    {
+      "number": 6,
+      "question": "🐞🚰🎃💆‍♂️🧖‍♀️",
+      "solution": [["romantik", "erst", "wellness"]],
+      "gif": "https://giphy.com/embed/QwtP7K0nASub2dHZru"
+    },
+    {
+      "number": 7,
+      "question": "⛳️🥵🏍️🍕🥳",
+      "solution": [
+        ["sommer", "feier", "fest"],
+        ["loberon", "nürnberg"]
+      ],
+      "gif": "https://giphy.com/embed/vmon3eAOp1WfK"
+    },
+    {
+      "number": 8,
+      "question": "🏷️🍽️🎯📖💸🏠🐈‍⬛",
+      "solution": [["flohmarkt", "verkauf"]],
+      "gif": "https://giphy.com/embed/I9ghnmJEzOh7G"
+    },
+    {
+      "number": 9,
+      "question": "🏰⛰️🏞️⛳️🚡😰",
+      "solution": [["saarburg"]],
+      "gif": "https://giphy.com/embed/7PwOZJLNYUkU"
+    },
+    {
+      "number": 10,
+      "question": "🤺📣👩‍🏫📄🥳🍾",
+      "solution": [["verteidigung", "master", "arbeit"]],
+      "gif": "https://giphy.com/embed/LPBhHit55Xxx03lllW"
+    },
+    {
+      "number": 11,
+      "question": "🚂🥶🪵🥾🍰🛏️🛏️",
+      "solution": [["linz", "eva"]],
+      "gif": "https://giphy.com/embed/xUOrw3Cefz0PcZrLFu"
+    },
+    {
+      "number": 12,
+      "question": "🌁🏞️🎀😵‍💫😅📸",
+      "solution": [["schleife", "mettlach"]],
+      "gif": "https://giphy.com/embed/1qB3EwE3c54A"
+    },
+    {
+      "number": 13,
+      "question": "🧺🥚🤎🌿👒🥰",
+      "solution": [["pick", "nick"]],
+      "gif": "https://giphy.com/embed/3owvKlYwQaek4mFd96"
+    },
+    {
+      "number": 14,
+      "question": "🥟🎭🥢🎐🙋‍♀️👘",
+      "solution": [
+        ["krimi", "dinner"],
+        ["asien", "china", "asia", "chinesisch"]
+      ],
+      "gif": "https://giphy.com/embed/6TcGkQLXwQgRG"
+    },
+    {
+      "number": 15,
+      "question": "🚙🫰💳🇧🇷🏰⛽️",
+      "solution": [["luxemburg", "luxembourg"]],
+      "gif": "https://giphy.com/embed/ely3apij36BJhoZ234"
+    },
+    {
+      "number": 16,
+      "question": "🏨📸🎲🦘🪰⛴️",
+      "solution": [["lipno", "tschechien", "krumlov", "frymburk"]],
+      "gif": "https://giphy.com/embed/6a7XrfeUxlEB2"
+    },
+    {
+      "number": 17,
+      "question": "🧂🎁🎭😍☠️",
+      "solution": [["ballett", "romeo", "julia"]],
+      "gif": "https://giphy.com/embed/uXqWOTZJdf5MVYINNV"
+    },
+    {
+      "number": 18,
+      "question": "🔫🍕🍝🔪🧐🪞",
+      "solution": [
+        ["krimi", "dinner"],
+        ["passau", "löwengrube", "freunde", "mafia", "italien"]
+      ],
+      "gif": "https://giphy.com/embed/uTCAwWNtz7U2c"
+    },
+    {
+      "number": 19,
+      "question": "🦁👨‍🍳🏠🍫🏚️🍭👜",
+      "solution": [
+        ["plätzchen", "lebkuchen", "backen"],
+        ["passau", "löwengrube", "freunde"]
+      ],
+      "gif": "https://giphy.com/embed/xT39CS3qt94YMU8NZS"
+    },
+    {
+      "number": 20,
+      "question": "💄💇‍♂️📸👖💃☕️🍹",
+      "solution": [["foto", "photo", "shooting", "gloria", "schwan"]],
+      "gif": "https://giphy.com/embed/lS0uOmv9Mg63EWYDHF"
+    },
+    {
+      "number": 21,
+      "question": "🔒🧙‍♀️🌬️🍕",
+      "solution": [
+        ["exit", "game", "escape", "room", "2022"],
+        ["halloween", "marina", "fabi"]
+      ],
+      "gif": "https://giphy.com/embed/eoxomXXVL2S0E"
+    },
+    {
+      "number": 22,
+      "question": "🔒😎👯‍♀️👯‍♂️👗✨",
+      "solution": [["debüt", "ball", "wien"]],
+      "gif": "https://giphy.com/embed/g57SpI4pMBU5O"
+    },
+    {
+      "number": 23,
+      "question": "🔎👟🚂👂💘",
+      "solution": [["schnitzel", "jagd", "o-woche", "kennenlernen", "grünau"]],
+      "gif": "https://giphy.com/embed/hOWis87UHY9ShlvUiH"
+    },
+    {
+      "number": 24,
+      "question": "🏰🍾🌨️🛁",
+      "solution": [
+        ["weihnacht", "christkind"],
+        ["markt"],
+        ["faber", "castell", "stein"]
+      ],
+      "gif": "https://giphy.com/embed/XwRP4JkXOsPII"
+    }
+  ]
+}

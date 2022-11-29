@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="de">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="style.css" />
+    <title>Adventskalender 2022</title>
+  </head>
+  <body
+    class="h-screen w-screen flex justify-center items-center p-4 bg-gradient-to-t from-blue-100 to-cyan-100 relative opacity-100"
+  >
+    <div
+      class="bg-white rounded-xl overflow-hidden flex flex-col shadow-lg shadow-blue-200"
+    >
+      <div class="bg-green-200">
+        <div
+          id="title"
+          class="text-transparent bg-clip-text bg-gradient-to-br from-green-400 to-emerald-600 py-3 px-4 text-3xl font-extrabold tracking-wider text-center"
+        >
+          Türchen
+        </div>
+      </div>
+      <div id="question" class="py-10 px-4 text-center">🤔</div>
+      <input
+        type="text"
+        id="input"
+        placeholder="Antwort"
+        class="py-3 px-4 mx-4 border-2 border-dashed border-stone-300 rounded-lg"
+      />
+      <button
+        id="submit"
+        class="rounded-lg cursor-pointer bg-red-400 hover:bg-red-500 active:bg-red-600 transition duration-300 font-bold tracking-wider text-white p-4 mx-4 my-7"
+      >
+        Abschicken
+      </button>
+    </div>
+
+    <a href="index.html">
+      <div
+        class="absolute top-0 left-0 bg-white hover:shadow-xl transition-shadow rounded-full shadow-lg shadow-blue-200 p-2 m-4 cursor-pointer"
+      >
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          class="h-6 w-6 text-gray-500 hover:text-gray-600 active:text-gray-700 transition duration-300 opacity-80"
+          fill="none"
+          viewBox="0 0 24 24"
+          stroke="currentColor"
+        >
+          <path
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            stroke-width="2"
+            d="M10 19l-7-7m0 0l7-7m-7 7h18"
+          />
+        </svg>
+      </div>
+
+      <!-- Modal that animates in -->
+        <div
+            id="modal"
+            class="fixed top-0 left-0 w-screen h-screen flex justify-center items-center bg-black bg-opacity-70 pointer-events-none opacity-0 transition-opacity duration-300"
+        >
+            <div
+                class="bg-white rounded-xl overflow-hidden flex flex-col shadow-lg shadow-blue-200"
+            >
+               <div id="modal-text" class="p-4 font-bold text-gray-700 tracking-wide">Ist die Antwort wirklich richtig? 🤔</div>
+            </div>
+        </div>
+
+
+    <!-- Snkowflake animation -->
+    <div class="snowflakes" aria-hidden="true">
+      <div class="snowflake">❅</div>
+      <div class="snowflake">❅</div>
+      <div class="snowflake">❆</div>
+      <div class="snowflake">❄</div>
+      <div class="snowflake">❅</div>
+      <div class="snowflake">❆</div>
+      <div class="snowflake">❄</div>
+      <div class="snowflake">❅</div>
+      <div class="snowflake">❆</div>
+      <div class="snowflake">❄</div>
+    </div>
+    <script src="confetti.js"></script>
+    <script src="door.js"></script>
+  </body>
+</html>
