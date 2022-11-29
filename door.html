@@ -9,29 +9,29 @@
     <title>Adventskalender 2022</title>
   </head>
   <body
-    class="h-screen w-screen flex justify-center items-center p-4 bg-gradient-to-t from-blue-100 to-cyan-100 relative opacity-100"
+    class="relative flex items-center justify-center w-screen h-screen p-4 opacity-100 bg-gradient-to-t from-blue-100 to-cyan-100"
   >
     <div
-      class="bg-white rounded-xl overflow-hidden flex flex-col shadow-lg shadow-blue-200"
+      class="flex flex-col w-full max-w-sm overflow-hidden bg-white shadow-lg rounded-xl shadow-blue-200"
     >
       <div class="bg-green-200">
         <div
           id="title"
-          class="text-transparent bg-clip-text bg-gradient-to-br from-green-400 to-emerald-600 py-3 px-4 text-3xl font-extrabold tracking-wider text-center"
+          class="px-4 py-3 text-3xl font-extrabold tracking-wider text-center text-transparent bg-clip-text bg-gradient-to-br from-green-400 to-emerald-600"
         >
           Türchen
         </div>
       </div>
-      <div id="question" class="py-10 px-4 text-center">🤔</div>
+      <div id="question" class="px-4 py-10 text-3xl tracking-widest text-center">🤔</div>
       <input
         type="text"
         id="input"
         placeholder="Antwort"
-        class="py-3 px-4 mx-4 border-2 border-dashed border-stone-300 rounded-lg"
+        class="px-4 py-3 mx-4 border-2 border-dashed rounded-lg border-stone-300"
       />
       <button
         id="submit"
-        class="rounded-lg cursor-pointer bg-red-400 hover:bg-red-500 active:bg-red-600 transition duration-300 font-bold tracking-wider text-white p-4 mx-4 my-7"
+        class="p-4 mx-4 font-bold tracking-wider text-white transition duration-300 bg-red-400 rounded-lg cursor-pointer hover:bg-red-500 active:bg-red-600 my-7"
       >
         Abschicken
       </button>
@@ -39,11 +39,11 @@
 
     <a href="index.html">
       <div
-        class="absolute top-0 left-0 bg-white hover:shadow-xl transition-shadow rounded-full shadow-lg shadow-blue-200 p-2 m-4 cursor-pointer"
+        class="absolute top-0 left-0 p-2 m-4 transition-shadow bg-white rounded-full shadow-lg cursor-pointer hover:shadow-xl shadow-blue-200"
       >
         <svg
           xmlns="http://www.w3.org/2000/svg"
-          class="h-6 w-6 text-gray-500 hover:text-gray-600 active:text-gray-700 transition duration-300 opacity-80"
+          class="w-6 h-6 text-gray-500 transition duration-300 hover:text-gray-600 active:text-gray-700 opacity-80"
           fill="none"
           viewBox="0 0 24 24"
           stroke="currentColor"
@@ -60,12 +60,12 @@
       <!-- Modal that animates in -->
         <div
             id="modal"
-            class="fixed top-0 left-0 w-screen h-screen flex justify-center items-center bg-black bg-opacity-70 pointer-events-none opacity-0 transition-opacity duration-300"
+            class="fixed top-0 left-0 flex items-center justify-center w-screen h-screen transition-opacity duration-300 bg-black opacity-0 pointer-events-none bg-opacity-70"
         >
             <div
-                class="bg-white rounded-xl overflow-hidden flex flex-col shadow-lg shadow-blue-200"
+                class="flex flex-col overflow-hidden bg-white shadow-lg rounded-xl shadow-blue-200"
             >
-               <div id="modal-text" class="p-4 font-bold text-gray-700 tracking-wide">Ist die Antwort wirklich richtig? 🤔</div>
+               <div id="modal-text" class="p-4 font-bold tracking-wide text-gray-700">Ist die Antwort wirklich richtig? 🤔</div>
             </div>
         </div>
 
