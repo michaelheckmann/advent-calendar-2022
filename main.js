@@ -1,3 +1,7 @@
+const params = new Proxy(new URLSearchParams(window.location.search), {
+  get: (searchParams, prop) => searchParams.get(prop),
+});
+
 const getComponent = (component, node = document) =>
   node.querySelector(`[data-component="${component}"]`);
 
@@ -20,7 +24,7 @@ const getDatabase = () => {
 
 const database = getDatabase();
 
-if (database.testing) {
+if (database.testing || params.testing === "true") {
   dayOfTheMonth = 31;
   month = 11;
 }
