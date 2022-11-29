@@ -13,6 +13,26 @@ const defaultDatabase = {
 let dayOfTheMonth = new Date().getDate();
 let month = new Date().getMonth();
 
+// https://stackoverflow.com/questions/16801687/javascript-random-ordering-with-seed
+const shuffle = (array, seed) => {
+  let m = array.length,
+    t,
+    i;
+  while (m) {
+    i = Math.floor(random(seed) * m--);
+    t = array[m];
+    array[m] = array[i];
+    array[i] = t;
+    ++seed;
+  }
+  return array;
+};
+
+const random = (seed) => {
+  const x = Math.sin(seed++) * 10000;
+  return x - Math.floor(x);
+};
+
 const getDatabase = () => {
   const savedDatabase = localStorage.getItem("db");
   if (savedDatabase) {
@@ -32,24 +52,32 @@ if (database.testing || params.testing === "true") {
 const card = getComponent("card");
 const cardContainer = getComponent("card-container");
 
+const randomOrder = shuffle(
+  Array(24)
+    .fill(0)
+    .map((_, i) => i),
+  dayOfTheMonth
+);
+
 for (let i = 1; i <= 24; i++) {
+  const day = randomOrder[i - 1] + 1;
   const clonedNode = card.cloneNode(true);
   const emoji = getComponent("emoji", clonedNode);
   const number = getComponent("number", clonedNode);
 
-  const isUnLocked = month === 11 && i <= dayOfTheMonth; // "🔒"
-  const isSolved = database.cards[i - 1] ? "🎉" : "🎁";
+  const isUnLocked = month === 11 && day <= dayOfTheMonth;
+  const isSolved = database.cards[day - 1] ? "🎉" : "🎁";
 
-  clonedNode.setAttribute("data-component", `card-${i}`);
-  emoji.setAttribute("data-component", `emoji-${i}`);
-  number.setAttribute("data-component", `number-${i}`);
+  clonedNode.setAttribute("data-component", `card-${day}`);
+  emoji.setAttribute("data-component", `emoji-${day}`);
+  number.setAttribute("data-component", `number-${day}`);
 
   emoji.textContent = isUnLocked ? isSolved : "🔒";
-  number.textContent = i.toString().padStart(2, "0");
+  number.textContent = day.toString().padStart(2, "0");
 
   if (isUnLocked) {
     clonedNode.addEventListener("click", () => {
-      window.location.href = `./door.html?door=${i}`;
+      window.location.href = `./door.html?door=${day}`;
     });
   } else {
     clonedNode.setAttribute("disabled", "");
